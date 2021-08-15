@@ -9,7 +9,7 @@ import { AntDesign } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 
 // ******************** Begin Create Styling ******************************* //
-export const CreateTitle = styled.Text`
+export const Title = styled.Text`
   text-align: center;
   font-size: 35px;
   font-weight: bold;
@@ -31,7 +31,7 @@ export const TextInputStyled = styled.TextInput`
   color: ${({ theme }) => theme.color};
 `;
 
-export const CreatButton = styled.TouchableOpacity`
+export const SubmitButton = styled.TouchableOpacity`
   margin: 0 auto;
   width: 170px;
   padding: 20px;
@@ -39,7 +39,7 @@ export const CreatButton = styled.TouchableOpacity`
   background-color: ${({ theme }) => theme.color};
 `;
 
-export const CreateButtonText = styled.Text`
+export const SubmitButtonText = styled.Text`
   text-align: center;
   font-weight: bold;
   font-size: 20px;

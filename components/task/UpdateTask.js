@@ -12,10 +12,10 @@ import { observer } from 'mobx-react';
 
 // styles
 import {
-  CreatButton,
-  CreateButtonText,
+  SubmitButton,
+  SubmitButtonText,
   CreateContainer,
-  CreateTitle,
+  Title,
   TextInputStyled,
 } from './styles';
 
@@ -36,7 +36,7 @@ const UpdateTask = ({ route, navigation }) => {
 
   return (
     <CreateContainer>
-      <CreateTitle>Update Task</CreateTitle>
+      <Title>Update Task</Title>
       <View>
         <TextInputStyled
           autoCapitalize="none"
@@ -54,9 +54,9 @@ const UpdateTask = ({ route, navigation }) => {
           value={task.description}
         />
       </View>
-      <CreatButton onPress={handleUpdate}>
-        <CreateButtonText>Update</CreateButtonText>
-      </CreatButton>
+      <SubmitButton onPress={handleUpdate}>
+        <SubmitButtonText>Update</SubmitButtonText>
+      </SubmitButton>
     </CreateContainer>
   );
 };

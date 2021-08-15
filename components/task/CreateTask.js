@@ -9,10 +9,10 @@ import taskStore from '../../stores/taskStore';
 
 // styles
 import {
-  CreatButton,
-  CreateButtonText,
+  SubmitButton,
+  SubmitButtonText,
   CreateContainer,
-  CreateTitle,
+  Title,
   TextInputStyled,
 } from './styles';
 
@@ -31,7 +31,7 @@ const CreateTask = ({ navigation }) => {
 
   return (
     <CreateContainer>
-      <CreateTitle>Create Task</CreateTitle>
+      <Title>Create Task</Title>
       <View>
         <TextInputStyled
           autoCapitalize="none"
@@ -47,9 +47,9 @@ const CreateTask = ({ navigation }) => {
           placeholderTextColor="#fff"
         />
       </View>
-      <CreatButton onPress={handlePress}>
-        <CreateButtonText>Add Task</CreateButtonText>
-      </CreatButton>
+      <SubmitButton onPress={handlePress}>
+        <SubmitButtonText>Add Task</SubmitButtonText>
+      </SubmitButton>
     </CreateContainer>
   );
 };
